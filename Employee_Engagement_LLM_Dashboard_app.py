@@ -29,7 +29,8 @@ st.set_page_config(
 def load_llm_model():
     """Load a small Hugging Face model for generating insights."""
     # We're using a small model that can run locally
-    model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+    # model_name = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+    model_name = "TinyLlama/TinyLlama-460M-Chat-v1.0"
     
     try:
         tokenizer = AutoTokenizer.from_pretrained(model_name)
